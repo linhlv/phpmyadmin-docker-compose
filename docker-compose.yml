@@ -1,0 +1,10 @@
+#phpmyadmin
+phpmyadmin:
+  image: phpmyadmin/phpmyadmin
+  container_name: phpmyadmin  
+  environment:    
+    PMA_HOST: <hostname> #must specify this  even LINK  
+    PMA_PORT: <port> 
+    PMA_USER: <username>
+  ports:
+    - "8080:80"
